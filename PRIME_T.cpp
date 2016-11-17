@@ -1,6 +1,6 @@
 #include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
+
+
 
 using namespace std;
 
@@ -17,7 +17,7 @@ while (licznik < n) {
         licznik++;
        }
     else{
-        for (int i=3; i<a/2; i++){
+        for (int i=3; i*i<a; i++){
         if (a%i==0){
             cout << "NIE" << endl;
             b++;
