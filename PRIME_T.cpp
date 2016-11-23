@@ -1,29 +1,29 @@
 #include <iostream>
 
 using namespace std;
-const int ROZM = 100000;
+const int SIZE = 100000;
 
 int main(){
 
 int n, b;
-int liczby[ROZM];
+int numbers[SIZE];
 int counter = 0;
-int  = 0;
+int testnr = 0;
 cin >> n;
-while (num < n) {
-cin >> liczby[num];
-num++;
+while (testnr < n) {
+cin >> numbers[testnr];
+testnr++;
 }
 while (counter < n) {
     b=0;
     //cin >> a;
-    if (liczby[counter]!=2&&liczby[counter]%2==0||liczby[counter]==1){
+    if (numbers[counter]!=2&&numbers[counter]%2==0||numbers[counter]==1){
         cout << "NIE" << endl;
         counter++;
        }
     else{
-        for (int i=3; i*i<=liczby[counter]; i++){
-        if (liczby[counter]%i==0){
+        for (int i=3; i*i<=numbers[counter]; i++){
+        if (numbers[counter]%i==0){
             cout << "NIE" << endl;
             b++;
             counter++;
