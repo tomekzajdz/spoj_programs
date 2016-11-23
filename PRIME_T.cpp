@@ -7,32 +7,32 @@ int main(){
 
 int n, b;
 int liczby[ROZM];
-int licznik = 0;
-int licznik2 = 0;
+int counter = 0;
+int  = 0;
 cin >> n;
-while (licznik2 < n) {
-cin >> liczby[licznik2];
-licznik2++;
+while (num < n) {
+cin >> liczby[num];
+num++;
 }
-while (licznik < n) {
+while (counter < n) {
     b=0;
     //cin >> a;
-    if (liczby[licznik]!=2&&liczby[licznik]%2==0||liczby[licznik]==1){
+    if (liczby[counter]!=2&&liczby[counter]%2==0||liczby[counter]==1){
         cout << "NIE" << endl;
-        licznik++;
+        counter++;
        }
     else{
-        for (int i=3; i*i<=liczby[licznik]; i++){
-        if (liczby[licznik]%i==0){
+        for (int i=3; i*i<=liczby[counter]; i++){
+        if (liczby[counter]%i==0){
             cout << "NIE" << endl;
             b++;
-            licznik++;
+            counter++;
             break;
             }
         }
         if (b==0){
         cout << "TAK" << endl;
-        licznik++;
+        counter++;
         }
     }
 }
