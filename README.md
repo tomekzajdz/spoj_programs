@@ -1,2 +1,2 @@
 # spoj_programs
-Zadania z polskiego SPOJ-a
+basic problems from spoj.com and pl.spoj.com
